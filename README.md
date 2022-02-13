@@ -21,7 +21,7 @@ We plan to include lottie with a loading sign and also membership. As for the me
  # Technologies Used
  - CSS
  - HTML
- - Javascript(SOON)
+ - Javascript
  - JQuery(SOON)
  - Java library(SOON)
  
