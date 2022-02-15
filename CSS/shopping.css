@@ -27,26 +27,37 @@ body{
     padding:10px;
 }
 
-.T1, .T2{
-    display: inline-block;
+.T1{
+    display: flex;
+    justify-content: center;
+    height: 110px;
 }
 
-.shirt{
-    display: inline-block;
-    margin:10px;
-    background-color: cornflowerblue;
-    width:160px;
-    height:210px;
+.cartbutton{
+    display: flex;
+    justify-content: center;
+}
+
+.product{
+    display: flex;
+    justify-content: center;
+    flex: 1 0 17%;
+    margin: 5px;
+    height: 395px;
+    background-color: rgb(245, 209, 152);
     text-align: center;
+
+}
+img{
+    margin-top: 15px;
 }
 
 
-.searchT{
-    margin-left:150px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.typeT{
-    margin:30px;
+.productlist{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:0 auto;
+    width: 90%;
+    margin-top: -20px;
 }
