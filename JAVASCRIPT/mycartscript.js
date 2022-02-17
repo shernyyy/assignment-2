@@ -17,7 +17,7 @@ function ready()
         button.addEventListener('click',removalofclothes) 
     }
 
-    var numberinput = doucment.getElementsByClassName('number-input')
+    var numberinput = document.getElementsByClassName('number-input')
     for(var i = 0; i < numberinput.length; i++)
     {
         var input = numberinput[i]

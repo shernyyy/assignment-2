@@ -25,11 +25,13 @@ ul
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  height: 50px;
 }
   
 li 
 {
   float: left;
+  font-size: 20px;
 }
   
 li a 
@@ -44,6 +46,16 @@ li a
 li a:hover 
 {
   background-color: #008080;
+}
+
+.navcartbutton{
+  float: right;
+}
+
+.cartimg{
+  display: block;
+  height: 42px;
+  margin-top: -10px;
 }
 
 .container 
@@ -154,3 +166,5 @@ li a:hover
 .group1,.group2,.group3{
   display: inline-block;
 }
+
+

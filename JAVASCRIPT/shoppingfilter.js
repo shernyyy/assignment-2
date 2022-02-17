@@ -1,40 +1,28 @@
+function filterSelectionAll() {
+  $('div').show()
+  document.getElementById("filterbutton").classList.add('active');
 
+  if ( document.getElementById("MyElement").classList.contains('active') )
 
-
-
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("product");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
-  }
+  document.getElementById("MyElement").classList.toggle('active');
 }
 
-// Show filtered elements
-function AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
-    }
-  }
+function filterSelectionShirt() {
+  $('div').show().filter(':not(.shirt)').hide();
 }
 
-// Hide elements that are not selected
-function RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
+function filterSelectionSkirt() {
+  $('div').show().filter(':not(.skirt)').hide();
+}
+
+function filterSelectionJeans() {
+  $('div').show().filter(':not(.jeans)').hide();
+}
+
+function filterSelectionShorts() {
+  $('div').show().filter(':not(.shorts)').hide();
+}
+
+function filterSelectionMidthighs() {
+  $('div').show().filter(':not(.midthighs)').hide();
 }

@@ -8,7 +8,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <script src="../JAVASCRIPT/jquery-3.6.0.js"></script>
   <script src="../JAVASCRIPT/shoppingfilter.js"></script>
+
 </head>
 
 <body>
@@ -20,17 +22,18 @@
       <li><a href="../HTML/category.html">Categories</a></li>
       <li><a href="../HTML/contact.html">Contact</a></li>
       <li><a href="../HTML/member.html">Membership</a></li>
+      <li class = "navcartbutton"><a href="../HTML/mycart.html"><img class="cartimg" src="../PICTURES/cart.png"></a></li>
   </ul>
 
   <br>
-  <div id="myBtnContainer">
-    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-    <button class="btn" onclick="filterSelection('shirt')"> Shirt</button>
-    <button class="btn" onclick="filterSelection('skirt')"> Skirt</button>
-    <button class="btn" onclick="filterSelection('jeans')"> Jeans</button>
-    <button class="btn" onclick="filterSelection('shorts')"> Shorts</button>
-    <button class="btn" onclick="filterSelection('midthighs')"> Midthighs</button>
-  </div>
+  <nav id="myBtnContainer">
+    <button class="btn active" id= "filterbutton" onclick="filterSelectionAll()"> Show all</button>
+    <button class="btn" id= "filterbutton" onclick="filterSelectionShirt()"> Shirt</button>
+    <button class="btn" id= "filterbutton" onclick="filterSelectionSkirt()"> Skirt</button>
+    <button class="btn" id= "filterbutton" onclick="filterSelectionJeans()"> Jeans</button>
+    <button class="btn" id= "filterbutton" onclick="filterSelectionShorts()"> Shorts</button>
+    <button class="btn" id= "filterbutton" onclick="filterSelectionMidthighs()"> Midthighs</button>
+  </nav>
   <br>
   
   <section class="productlist"> 
@@ -47,7 +50,7 @@
       </div>
       </div>
 
-      <div class="product shirt"> <div><img src="../PICTURES/shirt3.jpeg" width="160px" height="220px">
+      <div class="product shirt">  <div><img src="../PICTURES/shirt3.jpeg" width="160px" height="220px">
         <div> <div class="T1"> <h3>Beige-Coloured Shirt<br>$20</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
       </div>
       </div>
@@ -62,8 +65,8 @@
       </div>
       </div>
 
-      <div class="product shirt"> <div><img src="../PICTURES/shirt6.jpeg" width="160px" height="220px">
-        <div> <div class="T1"> <h3>Black-Coloured Hoodie<br>$10.90</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
+      <div class="product shirt"> <div class = "shirt"><img src="../PICTURES/shirt6.jpeg" width="160px" height="220px">
+        <div> <div class="T1 shirt"> <h3>Black-Coloured Hoodie<br>$10.90</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
       </div>
       </div>
 
