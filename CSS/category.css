@@ -1,11 +1,41 @@
+.categorycontainer{
+    display: flex;
+    justify-content: center;
+    flex: 1 0 10%;
+    margin: 10px;
+    height: 100%;
+    text-align: center;
+}
+.box{
+    display: flex;
+    width: 25vw;
+}
+
 h4
 {
     color: black;
-    font-size: 500%;
+    font-size: 400%;
     font-family: 'Dancing Script', cursive;
 }
+.button1{
+    width: 70%;
+    background: rgba(255, 255, 255, 0.7);
+}
 
-h1
-{
-    text-align: center;
+@media screen and (max-width: 840px) {
+    .categorycontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+    .box{
+        display: flex;
+        width: 90vw;
+        align-self: center;
+    }
+
+    img{
+        width: 90vw;
+    }
 }

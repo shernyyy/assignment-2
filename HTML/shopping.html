@@ -6,7 +6,9 @@
   <link rel="stylesheet" type="text/css" href="../CSS/button.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <script src="../JAVASCRIPT/shoppingfilter.js"></script>
 </head>
 
 <body>
@@ -21,123 +23,132 @@
   </ul>
 
   <br>
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('shirt')"> Shirt</button>
+    <button class="btn" onclick="filterSelection('skirt')"> Skirt</button>
+    <button class="btn" onclick="filterSelection('jeans')"> Jeans</button>
+    <button class="btn" onclick="filterSelection('shorts')"> Shorts</button>
+    <button class="btn" onclick="filterSelection('midthighs')"> Midthighs</button>
+  </div>
+  <br>
   
   <section class="productlist"> 
       
       
-    <div class="product"> <div><img src="../PICTURES/shirt1.jpeg" width="160px" height="220px">
+    <div class="product shirt"> <div><img src="../PICTURES/shirt1.jpeg" width="160px" height="220px">
       <div> <div class="T1"> <h3>Long-Sleeve Hoodie<br>$16.90</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
     </div>
     </div>
 
 
-    <div class="product"> <div><img src="../PICTURES/shirt2.jpeg" width="160px" height="220px">
+    <div class="product shirt"> <div><img src="../PICTURES/shirt2.jpeg" width="160px" height="220px">
         <div> <div class="T1"> <h3>Tongue-Designed Shirt<br>$23.90</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
       </div>
       </div>
 
-      <div class="product"> <div><img src="../PICTURES/shirt3.jpeg" width="160px" height="220px">
+      <div class="product shirt"> <div><img src="../PICTURES/shirt3.jpeg" width="160px" height="220px">
         <div> <div class="T1"> <h3>Beige-Coloured Shirt<br>$20</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
       </div>
       </div>
 
-      <div class="product"> <div><img src="../PICTURES/shirt4.jpeg" width="160px" height="220px">
+      <div class="product shirt"> <div><img src="../PICTURES/shirt4.jpeg" width="160px" height="220px">
         <div> <div class="T1"> <h3>Grey-Coloured Shirt<br>$15</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
       </div>
       </div>
 
-      <div class="product"> <div><img src="../PICTURES/shirt5.jpeg" width="160px" height="220px">
+      <div class="product shirt"> <div><img src="../PICTURES/shirt5.jpeg" width="160px" height="220px">
         <div> <div class="T1"> <h3>Graphic White Tee<br>$22</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
       </div>
       </div>
 
-      <div class="product"> <div><img src="../PICTURES/shirt6.jpeg" width="160px" height="220px">
+      <div class="product shirt"> <div><img src="../PICTURES/shirt6.jpeg" width="160px" height="220px">
         <div> <div class="T1"> <h3>Black-Coloured Hoodie<br>$10.90</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
       </div>
       </div>
 
-      <div class="product"> <div><img src="../PICTURES/shirt7.jpeg" width="160px" height="220px">
+      <div class="product shirt"> <div><img src="../PICTURES/shirt7.jpeg" width="160px" height="220px">
         <div> <div class="T1"> <h3>Mix-Coloured Hoodie<br>$15.90</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
       </div>
       </div>
 
-      <div class="product"> <div><img src="../PICTURES/skirt1.jpeg" width="160px" height="220px">
+      <div class="product skirt"> <div><img src="../PICTURES/skirt1.jpeg" width="160px" height="220px">
 
         <div> <div class="T1"> <h3>Beige Button-Up Skirt<br>$24</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
       </div>
       </div>
 
-      <div class="product"> <div><img src="../PICTURES/skirt2.jpeg" width="160px" height="220px">
+      <div class="product skirt"> <div><img src="../PICTURES/skirt2.jpeg" width="160px" height="220px">
 
         <div> <div class="T1"><h3>Side-Buttoned Skirt<br>$24.90</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
       </div>
       </div>
 
-      <div class="product"> <div><img src="../PICTURES/skirt3.jpeg" width="160px" height="220px">
+      <div class="product skirt"> <div><img src="../PICTURES/skirt3.jpeg" width="160px" height="220px">
 
         <div> <div class="T1"> <h3>Grey Zip-Up Skirt<br>$30</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
       </div>
       </div>
 
-      <div class="product"> <div><img src="../PICTURES/skirt4.jpeg" width="160px" height="220px">
+      <div class="product skirt"> <div><img src="../PICTURES/skirt4.jpeg" width="160px" height="220px">
 
         <div> <div class="T1"> <h3>Brown Zip-Up Skirt<br>$14.50</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
       </div>
       </div>
 
-      <div class="product"> <div><img src="../PICTURES/skirt5.jpeg" width="160px" height="220px">
+      <div class="product skirt"> <div><img src="../PICTURES/skirt5.jpeg" width="160px" height="220px">
 
         <div> <div class="T1"> <h3>White Tennis Skirt<br>$15.50</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
       </div>
       </div>
 
-      <div class="product"> <div><img src="../PICTURES/skirt6.jpeg" width="160px" height="220px">
+      <div class="product skirt"> <div><img src="../PICTURES/skirt6.jpeg" width="160px" height="220px">
 
         <div> <div class="T1"> <h3>Black Mid-Thigh Skirt<br>$16</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
       </div>
       </div>
-      <div class="product"> <div><img src="../PICTURES/skirt7.jpeg" width="160px" height="220px">
+      <div class="product skirt"> <div><img src="../PICTURES/skirt7.jpeg" width="160px" height="220px">
 
         <div> <div class="T1"> <h3>Checkered Skirt<br>$14</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
       </div>
       </div>
 
-      <div class="product"> <div><img src="../PICTURES/jeans1.jpeg" width="160px" height="220px">
+      <div class="product skirt"> <div><img src="../PICTURES/jeans1.jpeg" width="160px" height="220px">
 
         <div> <div class="T1"> <h3>Dark-Coloured Long Jeans<br>$10.20</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
       </div>
       </div>
 
-      <div class="product"> <div><img src="../PICTURES/jeans2.jpeg" width="160px" height="220px">
+      <div class="product jeans"> <div><img src="../PICTURES/jeans2.jpeg" width="160px" height="220px">
 
         <div> <div class="T1"> <h3>Light-Coloured Long Jeans<br>$30.20</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
       </div>
       </div>
 
-      <div class="product"> <div><img src="../PICTURES/jeans3.jpeg" width="160px" height="220px">
+      <div class="product jeans"> <div><img src="../PICTURES/jeans3.jpeg" width="160px" height="220px">
 
         <div> <div class="T1"> <h3>Grey-Coloured Long Jeans<br>$12</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
       </div>
       </div>
 
-      <div class="product"> <div><img src="../PICTURES/shorts1.jpeg" width="160px" height="220px">
+      <div class="product shorts"> <div><img src="../PICTURES/shorts1.jpeg" width="160px" height="220px">
 
         <div> <div class="T1"> <h3>Light-Coloured Mid Waisted Shorts<br>$24</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
       </div>
       </div>
 
-      <div class="product"> <div><img src="../PICTURES/shorts2.jpeg" width="160px" height="220px">
+      <div class="product shorts"> <div><img src="../PICTURES/shorts2.jpeg" width="160px" height="220px">
 
         <div> <div class="T1"> <h3>Dark High Waisted Shorts<br>$33</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
       </div>
       </div>
 
-      <div class="product"> <div><img src="../PICTURES/midthigh1.jpeg" width="160px" height="220px">
+      <div class="product midthighs"> <div><img src="../PICTURES/midthigh1.jpeg" width="160px" height="220px">
 
         <div> <div class="T1"> <h3>Brown-Coloured Mid-Thigh Tights<br>$9.20</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
       </div>
       </div>
-      <div class="product"> <div><img src="../PICTURES/midthigh2.jpeg" width="160px" height="220px">
+      <div class="product midthighs"> <div><img src="../PICTURES/midthigh2.jpeg" width="160px" height="220px">
 
         <div> <div class="T1"> <h3>Black-Coloured Mid-Thigh Tights<br>$10</h3></div> <div class="cartbutton"><a href="#" class="button1">Add To Cart</a></div></div>
       </div>
