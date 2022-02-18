@@ -23,11 +23,11 @@ We plan to include lottie animation where applicable and also a membership page.
  - CSS
  - HTML
  - Javascript
- - JQuery(SOON)
- - Java library(SOON)
+ - JQuery
  
  # Testing
  
  # Credits
  https://www.nordstrom.com/
+ Stack Overflow for examples of element filters and javascript execution on page load
  
