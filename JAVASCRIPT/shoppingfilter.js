@@ -1,10 +1,6 @@
+
 function filterSelectionAll() {
-  $('div').show()
-  document.getElementById("filterbutton").classList.add('active');
-
-  if ( document.getElementById("MyElement").classList.contains('active') )
-
-  document.getElementById("MyElement").classList.toggle('active');
+  $('div').show();
 }
 
 function filterSelectionShirt() {
@@ -26,3 +22,28 @@ function filterSelectionShorts() {
 function filterSelectionMidthighs() {
   $('div').show().filter(':not(.midthighs)').hide();
 }
+
+
+if ( window.location.hash && window.location.hash.match('#page1')){
+  $(function(){
+      $('div').show().filter(':not(.skirt)').hide();
+  })
+};
+
+if ( window.location.hash && window.location.hash.match('#page2')){
+  $(function(){
+      $('div').show().filter(':not(.jeans)').hide();
+  })
+};
+
+if ( window.location.hash && window.location.hash.match('#page3')){
+  $(function(){
+      $('div').show().filter(':not(.shorts)').hide();
+  })
+};
+
+if ( window.location.hash && window.location.hash.match('#page4')){
+  $(function(){
+      $('div').show().filter(':not(.shirt)').hide();
+  })
+};
