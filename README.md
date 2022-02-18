@@ -12,12 +12,11 @@ We plan to include lottie animation where applicable and also a membership page.
 - Contact section
 - Subscribe to newletters
 - Shopping catalogue
- 
+- Cart system
+- Filter into categories
 
  **Features left to implement**
  - Membership
- - Cart system
- - Filter into categories
  
  # Technologies Used
  - CSS
