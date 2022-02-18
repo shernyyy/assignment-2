@@ -9,7 +9,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
-        <script src="../JAVASCRIPT/shoppingfilter.js"></script>
+        <title>
+            <header><h1>Phua's Clothing Store</h1></header>
+        </title>
     </head>
 
     <body>
@@ -21,27 +23,26 @@
             <li><a href="../HTML/category.html">Categories</a></li>
             <li><a href="../HTML/contact.html">Contact</a></li>
             <li><a class="active" href="../HTML/member.html">Membership</a></li>
-            <li class = "navcartbutton"><a href="../HTML/mycart.html"><img class="cartimg" src="../PICTURES/cart.png"></a></li>
+            <li class = "navcartbutton"><a href="../HTML/mycart.html"><img class="cartimg" src="../PICTURES/cart.png" alt="cartimg"></a></li>
         </ul>
-    </body>
-    <div>
+
         <h2>Join our membership!</h2>
         <p class = "memberpara">Input your details here</p>
-        <form name="memberForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
-        <label for="fname">Full Name: </label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label class = "email">Enter email: </label><br>
-        <input type="text" id="email" name="email"><br>
-        <label for="contactno">Contact Number: </label><br>
-        <input type="text" id="contactNo" name="contactNo"><br>
-        <label for="password">Enter Password: </label><br>
-        <input type="text" id="password" name="password"><br>
-        <br>
-        <input type="submit" value="Submit">
+        <form name="memberForm">
+            <label for="fname">Full Name: </label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label class = "email">Enter email: </label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="contactNo">Contact Number: </label><br>
+            <input type="text" id="contactNo" name="contactNo"><br>
+            <label for="password">Enter Password: </label><br>
+            <input type="text" id="password" name="password"><br>
+            <br>
+            <input type="submit" value="Submit">
         </form>
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_cUG5w8.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
-    </div>
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_cUG5w8.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; margin-top: -120px; margin-left: -28px;"  loop  autoplay></lottie-player>
+    </body>
         
 
 </html>
