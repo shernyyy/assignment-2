@@ -29,5 +29,6 @@ We plan to include lottie animation where applicable and also a membership page.
  
  # Credits
  https://www.nordstrom.com/
+ 
  Stack Overflow for examples of element filters and javascript execution on page load
  
